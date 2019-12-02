@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/intro-animation.js" type="text/javascript"></script>
+
+ 
+</head>
+<body>
+<!-- Start of page 1 -->
+<div data-role="page" id="intro">
+
+
+	<div data-role="header">
+		<h1>BMI Calculator</h1>
+	</div><!-- /header -->
+	
+	<div id="demo">
+		<img class="logo" src="img/shark-2317422_640.png">
+	</div>
+	<div role="main" class="ui-content">
+		<p><a href="#bmi-calc">Page content goes here.</a></p>
+	</div><!-- /content -->
+</div>
+<!------End of page 1 ----->
+
+<!------- Start of page 2 -------->
+<div data-role="page" id="bmi-calc">
+
+	<div data-role="header">
+		<h1>BMI Calculator</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<form name="bmiForm">
+			Your Weight(kg): <input type="text" name="weight" id="weight" size="10 "><br />
+			Your Height(cm): <input type="text" name="height"  id="height" size="10 "><br />
+			<input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+			Your BMI: <input type="text" name="bmi"  id="bmi"size="10"><br />
+			<p id="Feedback">This Means</p>
+			<!---input type="text " name="meaning " id="meaning " size="25 "------></br>
+			<input type="reset" value="Reset">
+		</form>
+	</div><!-- /content -->
+</div><!-- /page -->
+</body>
+</html>
